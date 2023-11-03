@@ -66,7 +66,7 @@ function MangLinkifier_Decompose(chatstring)
       chatstring = string.gsub (chatstring, "%|cffffffff%|Hquest:(.*)%|h%[(.*)%]%|h%|r", MangLinkifier_Link("%2", "%1", "lookupquest"))
     end
     for guid in string.gmatch(chatstring, "%|cff(.*)%|Hitem:(.*)%|h%[(.*)%]%|h%|r") do --LOOKUP ITEM -- Bug when more than 1 item is linked in chat, it is not  translated
-      chatstring = string.gsub (chatstring, "%|cff(.*)%|Hitem:(.*)%|h%[(.*)%]%|h%|r", MangLinkifier_Link("%3-%1", "%2", "lookupitem"))
+      chatstring = string.gsub (chatstring, "%|cff(.-)%|Hitem:(%d+):%d+:%d+:%d+:%d+:%d+:%d+:%d+:%d+%|h%[(.-)%]%|h%|r", MangLinkifier_Link("%3-%1", "%2", "lookupitem"))
     end
     for guid in string.gmatch(chatstring, "%|cffffffff%|Hgameobject_entry:(.*)%|h%[(.*)%]%|h%|r") do --LOOKUP OBJECT
       chatstring = string.gsub (chatstring, "%|cffffffff%|Hgameobject_entry:(.*)%|h%[(.*)%]%|h%|r", MangLinkifier_Link("%2", "%1", "lookupgo"))
