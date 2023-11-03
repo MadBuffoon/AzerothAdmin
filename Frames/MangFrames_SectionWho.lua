@@ -353,7 +353,7 @@ function MangAdmin:CreateWhoSection()
     inherits = "FauxScrollFrameTemplate"
 --    inherits = "UIPanelScrollFrameTemplate"
   })
-
+--[[
   FrameLib:BuildFrame({  --Weird Editbox, left side, top
     type = "EditBox",
     name = "ma_whodetail",
@@ -399,7 +399,7 @@ function MangAdmin:CreateWhoSection()
     multiline = true,
     textcolor = {1, 1, 1, 1.0}
   })
-
+]]
   FrameLib:BuildFontString({
     name = "ma_whoidlabel",
     group = "who",
@@ -408,7 +408,7 @@ function MangAdmin:CreateWhoSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 10,
-      offY = -30
+      offY = -35
     }
   })
 
@@ -420,10 +420,22 @@ function MangAdmin:CreateWhoSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 40,
-      offY = -30
+      offY = -35
     }
   })
-
+  
+  FrameLib:BuildFontString({
+    name = "ma_whowherelabel",
+    group = "who",
+    parent = ma_midframe,
+    text = Locale["ma_locdetail"],
+    setpoint = {
+      pos = "TOPLEFT",
+      offX = 10,
+      offY = -65
+    }
+  })
+  
   FrameLib:BuildFontString({
     name = "ma_whowhere",
     group = "who",
@@ -432,7 +444,7 @@ function MangAdmin:CreateWhoSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 40,
-      offY = -30
+      offY = -65
     }
   })
 
@@ -443,8 +455,8 @@ function MangAdmin:CreateWhoSection()
     text = Locale["ma_chardetail"],
     setpoint = {
       pos = "TOPLEFT",
-      offX = 120,
-      offY = -30
+      offX = 10,
+      offY = -50
     }
   })
 
@@ -455,8 +467,8 @@ function MangAdmin:CreateWhoSection()
     text = "",
     setpoint = {
       pos = "TOPLEFT",
-      offX = 150,
-      offY = -30
+      offX = 40,
+      offY = -50
     }
   })
 

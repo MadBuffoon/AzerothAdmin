@@ -267,6 +267,7 @@ function InitControls()
   MangAdmin:PrepareScript(ma_ContScrollBarEntry10            , nil                                     , function() MangAdmin.db.char.selectedCont = "I_O"; cont=MangAdmin.db.char.selectedCont; TeleScrollUpdate() end)
   MangAdmin:PrepareScript(ma_ContScrollBarEntry11            , nil                                     , function() MangAdmin.db.char.selectedCont = "I_N"; cont=MangAdmin.db.char.selectedCont; TeleScrollUpdate() end)
   MangAdmin:PrepareScript(ma_ContScrollBarEntry12            , nil                                     , function() MangAdmin.db.char.selectedCont = "OT"; cont=MangAdmin.db.char.selectedCont; TeleScrollUpdate() end)
+  MangAdmin:PrepareScript(ma_ContScrollBarEntry13            , nil                                     , function() MangAdmin.db.char.selectedCont = "CUS"; cont=MangAdmin.db.char.selectedCont; TeleScrollUpdate() end)
 
 --[[Tickets Tab]]
   MangAdmin:PrepareScript(ma_tabbutton_ticket                , Locale["tt_TicketButton"]               , function() ShowTicketTab() end)

@@ -328,7 +328,29 @@ function MangAdmin:CreateTeleSection()
     },
     script = {{"OnShow", function() this:RegisterForClicks("LeftButtonDown", "RightButtonDown") end}}
   })
-
+  
+  FrameLib:BuildButton({
+    name = "ma_ContScrollBarEntry13",
+    group = "tele",
+    parent = ma_midframe,
+    setpoint = {
+      pos = "TOPLEFT",
+      relTo = "ma_ContScrollBarEntry12",
+      relPos = "BOTTOMLEFT",
+      offY = -2
+    },
+    texture = {
+      name = "ma_ContScrollBarEntry12_texture",
+      color = {color.btn.r, color.btn.g, color.btn.b, transparency.btn}
+    },
+    text = "Custom",
+    size = {
+      width = 181,
+      height = 16
+    },
+    script = {{"OnShow", function() this:RegisterForClicks("LeftButtonDown", "RightButtonDown") end}}
+  })
+  
   FrameLib:BuildFontString({
     name = "ma_telezonetext",
     group = "tele",

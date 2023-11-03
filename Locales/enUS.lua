@@ -661,6 +661,7 @@ function Return_enUS()
     ["ma_resetwhobutton"]             = "Reset",
     ["ma_acctdetail"]                 = "Acct:",
     ["ma_chardetail"]                 = "Char:",
+    ["ma_locdetail"]                 = "Loc:",
     ["ma_whisperbutton"]              = "Whisper",
     ["ma_SummonWhoButton"]            = "Summon",
     ["ma_GoCharWhoButton"]            = "Appear",

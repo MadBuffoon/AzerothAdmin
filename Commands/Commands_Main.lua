@@ -65,11 +65,11 @@ end
 function ToggleTaxicheat(value)
   if MangAdmin:Selection("player") or MangAdmin:Selection("self") or MangAdmin:Selection("none") then
     local player = UnitName("target") or UnitName("player")
-    MangAdmin:ChatMsg(".taxicheat "..value)
+    MangAdmin:ChatMsg(".cheat taxi "..value)
     if value == 1 then
-      MangAdmin:LogAction("Activated taxicheat to "..player..".")
+      MangAdmin:LogAction("Activated taxi cheat to "..player..".")
     else
-      MangAdmin:LogAction("Disabled taxicheat to "..player..".")
+      MangAdmin:LogAction("Disabled taxi cheat to "..player..".")
     end
   else
     MangAdmin:Print(Locale["selectionerror1"])
@@ -77,7 +77,7 @@ function ToggleTaxicheat(value)
 end
 
 function ToggleMaps(value) --TODO: Add confirm diaglog when attempting to perform action
-  MangAdmin:ChatMsg(".explorecheat "..value)
+  MangAdmin:ChatMsg(".cheat explore "..value)
   if value == 1 then
     MangAdmin:LogAction("Revealed all maps for selected player.")
   else
@@ -201,7 +201,7 @@ function ToggleChat(value)
 end
 
 function ToggleWaterwalk(value)
-  MangAdmin:ChatMsg(".waterwalk "..value)
+  MangAdmin:ChatMsg(".cheat waterwalk "..value)
   MangAdmin:LogAction("Turned Waterwalk to "..value..".")
 end
 

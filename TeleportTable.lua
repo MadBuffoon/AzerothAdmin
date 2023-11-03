@@ -1666,7 +1666,13 @@ elseif cont == "I_N" then
     ["[EK]Tirisfal Glades"]                               = ".go xyz 2054.57 241.679 99.8521 0",
     ["[KL]Durotar"]                                       = ".go xyz 1331.11 -4649.45 53.6269 1",
   },
-
+}
+elseif cont == "CUS" then
+  return {  
+  ["PvP Tol Barad"] = {
+    ["Alliance"]                               = ".go xyz -912.41 6926.012 21.861 0 0.2546",
+    ["Horde"]                                       = ".go xyz -1134.21 7259.195 21.31 0 0.29",
+  },
 }
  end
 end

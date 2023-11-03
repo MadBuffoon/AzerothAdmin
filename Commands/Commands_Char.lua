@@ -140,7 +140,7 @@ function Demorph()
 end
 
 function ToggleMapsChar(value)
-  MangAdmin:ChatMsg(".explorecheat "..value)
+  MangAdmin:ChatMsg(".cheat explore "..value)
   if value == 1 then
     MangAdmin:LogAction("Revealed all maps for selected player.")
   else
@@ -263,7 +263,7 @@ function Modify(case, value)
       MangAdmin:ChatMsg(".modify swim "..value)
       MangAdmin:LogAction("Modified SwimSpeed for "..player.." to "..value.." mana")
     elseif case == "tp" then
-      MangAdmin:ChatMsg(".modify tp "..value)
+      MangAdmin:ChatMsg(".modify talentpoints "..value)
       MangAdmin:LogAction("Modified TalentPoints for "..player.." to "..value.." mana")
     end
   else

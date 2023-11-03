@@ -795,6 +795,7 @@ function MangAdmin:AddMessage(frame, text, r, g, b, id)
             local itemName, itemLink, itemQuality, _, _, _, _, _, _ = GetItemInfo(id);
             if not itemName then
               GameTooltip:SetOwner(ma_popupframe, "ANCHOR_RIGHT")
+             -- GameTooltip:SetHyperlink("item:"..id..":0:0:0:0:0:0:0")
               GameTooltip:SetHyperlink("item:"..id..":0:0:0:0:0:0:0")
               GameTooltip:Hide()
             end
